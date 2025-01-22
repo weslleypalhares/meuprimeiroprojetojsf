@@ -11,7 +11,7 @@ public class DaoGeneric<E> {
 
 	
 	public void salvar(E entidade) {
-		EntityManager entityManager = JPAUtil.getenEntityManager();
+		EntityManager entityManager = JPAUtil.getEntityManager();
 		EntityTransaction entityTransaction = entityManager.getTransaction();
 		entityTransaction.begin();
 		
@@ -22,7 +22,7 @@ public class DaoGeneric<E> {
 	}
 	
 	public E merge(E entidade) {
-		EntityManager entityManager = JPAUtil.getenEntityManager();
+		EntityManager entityManager = JPAUtil.getEntityManager();
 		EntityTransaction entityTransaction = entityManager.getTransaction();
 		entityTransaction.begin();
 		
@@ -35,7 +35,7 @@ public class DaoGeneric<E> {
 	}
 	
 	public void delete(E entidade) {
-		EntityManager entityManager = JPAUtil.getenEntityManager();
+		EntityManager entityManager = JPAUtil.getEntityManager();
 		EntityTransaction entityTransaction = entityManager.getTransaction();
 		entityTransaction.begin();
 		
@@ -46,7 +46,7 @@ public class DaoGeneric<E> {
 	}
 	
 	public void deletePorId(E entidade) {
-		EntityManager entityManager = JPAUtil.getenEntityManager();
+		EntityManager entityManager = JPAUtil.getEntityManager();
 		EntityTransaction entityTransaction = entityManager.getTransaction();
 		entityTransaction.begin();
 		
@@ -58,7 +58,7 @@ public class DaoGeneric<E> {
 	}
 	
 	public List<E> getListEntity(Class<E> entidade){
-		EntityManager entityManager = JPAUtil.getenEntityManager();
+		EntityManager entityManager = JPAUtil.getEntityManager();
 		EntityTransaction entityTransaction = entityManager.getTransaction();
 		entityTransaction.begin();
 		

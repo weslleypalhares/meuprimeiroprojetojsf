@@ -14,7 +14,7 @@ public class JPAUtil {
 		}
 	}
 	
-	public static EntityManager getenEntityManager() {
+	public static EntityManager getEntityManager() {
 		return factory.createEntityManager();
 	}
 	
